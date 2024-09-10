@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="./images/logoparadisbull.jpeg" type="image/x-icon">
+
+    <title>Présentation du Vin</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .header img {
+            max-height: 200px;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+        .product img {
+            width: 80%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            flex: 1 1 100%;
+            object-fit: contain;
+        }
+        .details {
+            flex: 1 1 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            text-align: justify;
+
+        }
+        .details h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        .details p {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        .details p span {
+            font-weight: bold;
+            color: #555;
+        }
+        .price {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #b12704
+           
+        }
+        .footer-bottom {
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: black;
+  }
+  
+  .payment-img {
+    max-width: 335px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .copyright {
+    color: var(--sonic-silver);
+    font-size: var(--fs-8);
+    font-weight: var(--weight-500);
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    color: white;
+
+  }
+  
+  .copyright a {
+    display: inline;
+    color: white;
+  }
+
+        /*MEDIA QUERY 350 PX*/
+        @media (max-width: 350px) {
+            .container {
+            max-width: 350px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 5px;
+        }
+        .header img {
+            max-height: 100px;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        .product img {
+            width: 40%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 5px;
+            flex: 1 1 100%;
+            object-fit: contain;
+        }
+        .details {
+            flex: 1 1 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+        }
+        .details h2 {
+            font-size: 16px;
+            margin-bottom: 7px;
+        }
+        .details p {
+            font-size: 10px;
+            margin: 5px 0;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        .details p span {
+            font-weight: bold;
+            color: #555;
+        }
+        .price {
+            font-size: 30px;
+            margin-top: 20px;
+            color: #b12704;
+        }
+            
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="./images/logoparadisbull.jpeg" alt="Logo de votre entreprise">
+    </div>
+    
+    <div class="product">
+        <img src="./images/barsac.jpg" alt="Image du produit">
+        
+        <div class="details">
+            <h2>LE VIN D'ALSACE</h2>
+            <p><i class="fas fa-wine-glass"></i><span> Type: </span> Vin Moelleux</p>
+            <p><i class="fas fa-calendar-alt"></i><span> Millésime: </span> 2021</p>
+            <p><i class="fas fa-map-marker-alt"></i><span> Région:</span> Grecque</p>
+            <p><i class="fa-sharp fas fa-percent"></i><span> Alcool:</span> 12.5%</p>
+            <p><i class="fas fa-info-circle"></i><span> Description:</span> Le résultat peut alors vraiment se comparer à de l’or liquide.
+                Une couleur dorée, qui prend  des teintes cuivrées avec l’âge, qui vous absorbe 
+                et ne vous laisse qu’une seule envie : plonger  dans le verre. Dans sa jeunesse, un 
+                vin de Barsac sera très marqué par des notes de miel,  d’épices douces (vanille, cannelle) 
+                et de fruits exotiques mûrs. Avec l’âge, il gagne en  complexité avec toujours cette trame 
+                de miel à laquelle vient s’ajouter une aromatique  d’orange et d’ananas confits. Mais, comment 
+                parler de Barsac sans mentionner cette  sensation de nectar, voire même de crème que l’on a en bouche, comme sur un nuage.</p>
+            <p class="price"><i class="fas fa-tag"></i> Prix: 3.500 FCFA</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-bottom">
+
+<div class="container2">
+
+  <img src="./images/paiement.png" alt="payment method" class="payment-img">
+
+  <p class="copyright">
+    Copyright &copy; <a href="#">Tous droits réservés à PARADISBULL.</a> 
+  </p>
+
+</div>
+
+</div>
+    </footer>
+
+</body>
+</html>

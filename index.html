@@ -1,0 +1,3580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParadisDesBulles</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./images/logoparadisbull.jpeg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./images/logoparadisbull.jpeg" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Abonnez-vous</h3>
+
+            <p class="newsletter-desc">
+              Abonnez-vous à <b>ParadisDesBulles</b> pour obtenir les derniers produits et les mises à jour de remise.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Votre adresse" required>
+
+          <button type="submit" class="btn-newsletter">S'abonner</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./images/R.jpg" alt="Vignole Français" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Un vouveau produit pour toi!        
+      </p>
+
+      <p class="toast-title">
+        vigneron Français
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time>
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="https://www.facebook.com" class="social-link"  target="blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.bing.com/search?q=twitte" class="social-link"  target="blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/?hl=fr" class="social-link"  target="blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com" class="social-link"  target="blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>LE PARADIS DES BULLES</b>
+        
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="fcfa">FCFA</option>
+            <option value="eur">EUR &euro;</option>
+
+          </select>
+
+          <select name="language">
+            <option value="fr">Fran&ccedil;ais</option>
+            <option value="es-ES">Espa&ntilde;ol</option>
+            <option value="en-US">Anglais</option>
+
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./images/logoparadisbull.jpeg" alt="logoparadisbull" width="50" height="40">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Entrer le nom de votre produit ici...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Accueil</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Vins</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Vins rouges</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="montesa.html" target="_blank">Montesa</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="moutoncadet.html" target="_blank">Mouton Cadet Reserve</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="chenet.html"target="_blank">J.P Chenet-Cabernet Syrah</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="husclos.html"target="_blank">Huis Clos-merlot</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="bordeau.html"target="_blank">Bordeaux Supérieur</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#"target="_blank">
+                    <img src="./images/moutoncadet.jpeg" target="_blank" alt="Mouton cadet" width="150"
+                      height="50">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Vins Blancs</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="sauvignon.html" target="_blank" >Sauvignon</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="chenin.html" target="_blank" >Chenin</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="marsanne.html" target="_blank">Marsanne</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Riesling.html" target="_blank">Riesling</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="muscat.html" target="_blank">Muscat blanc</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./images/vinblanc.jpg" alt="men's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Vins Moelleux</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="basalc.html">Le Barsac</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="sauterne.html">Le Sauternes</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="gaillat.html">Le Gaillac</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="monzillac.html">Le Monbazillac</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="alsace.html">les vins d’Alsace</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./images/sauterne.jpeg" alt="women's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Vins Rosés</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="husclos.html">Clos des princes</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="saintmichel.html" target="_blank">Château Saint Michel</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="bordeau.html">Bordeaux Château Tour de Baillou</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="faniere.html" target="_blank">Les Faîtières</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">P'tit Clocher Rosé</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./images/chateau_saint_michel.jpeg" alt="mouse collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">CHAMPAGNES</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="doussot.html" target="_blank">Doussout</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="auterau.html">Autréau</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="veuveclicquot.html" target="_blank">Veuve Clicquot</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="basalc.html">Le Barsac</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="montesa.html">Le Monbazillac</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">FROMAGES</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Camemberts</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Babybel</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Bleu d'auvergne</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Chavroux</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Accessoires</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Verres à vins</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Verres à whisky</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Verres à coktails</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Les tire-bouchons</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Ventes Flash</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Autres</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="contact.html">Nous contacter</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="commande.html">Passer une commande</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="aide.html">Aide</a>
+              </li>
+
+            </ul>
+          </li>
+
+          
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">ParadisDesBulles</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Accueil</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Vins Rouges</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="montesa.html" class="submenu-title">Montesa</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="moutoncadet.html" class="submenu-title">Mouton cadet</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="chenet.html" class="submenu-title">J.P Chenet-Cabernet Syrah</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="bordeau.html"target="_blank">Bordeaux Supérieur</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Vins Blancs</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="sauvignon.html" class="submenu-title">Sauvignon</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="chenin.html" class="submenu-title">Chenin</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="Riesling.html" class="submenu-title">Riesling</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="muscat.html" class="submenu-title">Muscat blanc</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Vins Moelleux</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="basalc.html" class="submenu-title">Le Barsac</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="sauterne.html" class="submenu-title">Le Sauternes</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="monzillac.html" class="submenu-title">Le Monbazilla</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="alsace.html" class="submenu-title">les vins d’Alsace</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Vins Rosés</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="husclos.html" class="submenu-title">Clos des princes</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="saintmichel.html" class="submenu-title">Château Saint Michel</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="bordeau.html" class="submenu-title">Bordeaux Château Fourreaux</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="faniere.html" class="submenu-title">Les Faîtières</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Blog</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Nous contacter</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Langue</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Fran&ccedil;ais</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Anglais</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Monnaie</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">FCFA </a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EUR &euro;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="https://www.facebook.com" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.bing.com/search?q=twitte" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="./images/deuxverres.jpg" alt="women's latest fashion sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Le vigneron noble</p>
+
+              <h2 class="banner-title">Cave à vin multi-saveurs à votre goût dans la ville d'Abidjan.</h2>
+
+              <p class="banner-text" style="color: white;">
+                A partir de  <b>3.500 FCA</b>
+              </p>
+
+              <a href="#" class="banner-btn">Faire une commande</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./images/vinblancETrouge.jpg" alt="vins blancs et rouges" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Le vigneron noble</p>
+
+              <h2 class="banner-title">Cave à vin multi-saveurs à votre goût dans la ville d'Abidjan.</h2>
+
+              <p class="banner-text">
+                A partir de  <b>3.500 FCA</b>
+              </p>
+
+              <a href="#" class="banner-btn">Commander maintenant</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./images/profila.jpg" alt="new fashion summer sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Le vigneron noble</p>
+
+              <h2 class="banner-title">Cave à vin multi-saveurs à votre goût dans la ville d'Abidjan.</h2>
+
+              <p class="banner-text">
+                A partir de  <b>3.500 FCA</b>
+              </p>
+
+              <a href="#" class="banner-btn">Commander maintenant</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./images/moutoncadet.jpeg" alt="dress & frock" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Mouton cadet</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="moutoncadet.html"target="_blank" class="category-btn">Tout afficher</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./images/petitberet.jpeg" alt="winter wear" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Petit beret</h3>
+
+                <p class="category-item-amount">(58)</p>
+              </div>
+
+              <a href="beret.html"target="_blank" class="category-btn">Tout afficher</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./images/ruinart.jpeg" alt="glasses & lens" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Ruinart</h3>
+
+                <p class="category-item-amount">(68)</p>
+              </div>
+
+              <a href=""target="_blank" class="category-btn">Tout afficher</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./images/laurantperrieux.jpeg" alt="shorts & jeans" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Laurant perrieux</h3>
+
+                <p class="category-item-amount">(84)</p>
+              </div>
+
+              <a href="#" class="category-btn">Tout afficher</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./images/gh_hmmm.jpeg" alt="t-shirts" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">GH-MUMM</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="#" target="_blank"class="category-btn">Tout afficher</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./images/fexf.jpg" alt="jacket" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">FREIFENET</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href=""target="_blank" class="category-btn">Tout afficher</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./images/folle-douce-blanc-moelleux.jpeg" alt="watch" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">VALCOMBE</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="#" class="category-btn">Tout afficher</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./images/montesa.jpeg" alt="hat & caps" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">MONTESA</h3>
+
+                <p class="category-item-amount">(39)</p>
+              </div>
+
+              <a href="montesa.html"target="_blank" class="category-btn">STout afficher</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Categories</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./images/moutoncadet.jpeg" alt="clothes" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Vins</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="moutoncadet.html" class="sidebar-submenu-title">
+                      <p class="product-name">Mouton cadet</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="sauterne.html" class="sidebar-submenu-title">
+                      <p class="product-name">Sauterne</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="montesa.html" class="sidebar-submenu-title">
+                      <p class="product-name">Montesa</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="" class="sidebar-submenu-title">
+                      <p class="product-name">Cote Rhône</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./images/moet.jpeg" alt="footwear" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Champganes</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="" class="sidebar-submenu-title">
+                      <p class="product-name">Freifenet</p>
+                      <data value="45" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="veuveclicquot.html" class="sidebar-submenu-title">
+                      <p class="product-name">Veuve Clicquot</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Ruhna</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">laurent  perrieur</p>
+                      <data value="26" class="stock" title="Available Stock">26</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./images/tirebouchon.jpeg" alt="clothes" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Accessoires</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">tire-bouchons</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Couple de coktails</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Glaces alimentaires</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./images/cocktail.png" alt="perfume" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Cocktails</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">fruits</p>
+                      <data value="12" class="stock" title="Available Stock">12 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Alcoolisé</p>
+                      <data value="60" class="stock" title="Available Stock">60 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Non-alcoolisé</p>
+                      <data value="50" class="stock" title="Available Stock">50 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Menthe</p>
+                      <data value="87" class="stock" title="Available Stock">87 pcs</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./images/sacdevin.jpg" alt="cosmetics" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Sacs</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Volute</p>
+                      <data value="68" class="stock" title="Available Stock">68</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Plastique</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">carton</p>
+                      <data value="79" class="stock" title="Available Stock">79</data>
+                    </a>
+                  </li>
+
+                  
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./images/babybel.jpeg" alt="glasses" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Fromages</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Camemberts</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Babybel</p>
+                      <data value="48" class="stock" title="Available Stock">48</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./images/amorik.jpg" alt="bags" class="menu-title-img" width="20" height="20">
+
+                    <p class="menu-title">whisky</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Bellevoye</p>
+                      <data value="62" class="stock" title="Available Stock">62</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Vilanova</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">J. Walker</p>
+                      <data value="80" class="stock" title="Available Stock">80</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Breton Amorik</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">MEILLEURES VENTES</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="" class="showcase-img-box">
+                    <img src="./images/moet.jpeg" alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Moet & Chandon</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>45.000 FCFA</del>
+                      <p class="price">42.500 FCFA</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./images/moutoncadet.jpeg" alt="men's hoodies t-shirt" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="moutoncadet.html">
+                      <h4 class="showcase-title">Mouton Cadet</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>6.300 FCFA</del>
+                      <p class="price">5.000 FCFA</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./images/veuvecliquotdemisec.jpg" alt="girls t-shirt" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="veuveclicquot.html">
+                      <h4 class="showcase-title">Veuve Cliquot demi sec</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>50.000 FCFA</del>
+                      <p class="price">46.000 FCFA</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./images/vinblanc.jpg" alt="woolen hat for men" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Larroudé</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>5.000 FCFA</del>
+                      <p class="price">4.000 FCFA</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">Nouveaux produits</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/montesa.jpeg" alt="Montesa-vin rouge" width="70" class="showcase-img" title="vin rouge d'origne espagnol [14%]">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="montesa.html">
+                        <h4 class="showcase-title">Montesa</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Vin rouge</a>
+
+                      <div class="price-box">
+                        <p class="price">4.500 FCFA</p>
+                          <del>5.000 FCFA</del>
+                        </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/moet.jpeg" alt="girls pink embro design top" class="showcase-img" width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Moët</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Champagne</a>
+                  
+                      <div class="price-box">
+                        <p class="price">42.500 FCFA</p>
+                          <del>45.000 FCFA</del>
+                        </div>
+                    
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/laurantperrieux.jpeg" alt="black floral wrap midi skirt" class="showcase-img"
+                      width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Laurant Perrieux</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Champagne</a>
+                  
+                      <div class="price-box">
+                        <p class="price">33.500 FCFA</p>
+                          <del>36.000 FCFA</del>
+                        </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/fexf.jpg" alt="pure garment dyed cotton shirt" class="showcase-img"
+                      width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">FREIFENET</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Champagne</a>
+                  
+                      <div class="price-box">
+                        <p class="price">35.000 FCFA</p>
+                          <del>46.000 FCFA</del>
+                        </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/elmeson.jpg" alt="men yarn fleece full-zip jacket" class="showcase-img"
+                      width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">EL MESON</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Vin rouge</a>
+                
+                      <div class="price-box">
+                        <p class="price">3.500 FCFA</p>
+                          <del>5.000 FCFA</del>
+                        </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/chateau_saint_michel.jpeg" alt="mens winter leathers jackets" class="showcase-img"
+                      width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="saintmichel.html">
+                        <h4 class="showcase-title">CHATEAU SAINT MICHEL</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Vin rouge</a>
+                
+                      <div class="price-box">
+                        <p class="price">3.000 FCFA</p>
+                          <del>4.000 FCFA</del>
+                        </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/sauterne.jpeg" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="sauterne.html">
+                        <h4 class="showcase-title">Sauternes- la fleur Mallet</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Vin Blanc</a>
+                
+                      <div class="price-box">
+                        <p class="price">5.000 FCFA</p>
+                          <del>6.500 FCFA</del>
+                        </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/veuvecliquot.jpeg" alt="better basics french terry sweatshorts" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="veuveclicquot.html">
+                        <h4 class="showcase-title">Veuve Cliquot</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Champagne</a>
+                
+                      <div class="price-box">
+                        <p class="price">45.000 FCFA</p>
+                        <del>50.000 FCFA</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Les Mieux Notés</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/bordeaux.jpeg" alt="running & trekking shoes - white" class="showcase-img"
+                      width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="bordeauxbaillou.htm">
+                        <h4 class="showcase-title">Bordeaux Château Tour de Baillou</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Vin rouge</a>
+            
+                      <div class="price-box">
+                        <p class="price">3.700 FCFA</p>
+                          <del>5.000 FCFA</del>
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/chenet.jpeg" alt="trekking & running shoes - black" class="showcase-img"
+                      width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="chenet.html">
+                        <h4 class="showcase-title">Chenet- Cabernet syrah</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Vin rouge</a>
+            
+                      <div class="price-box">
+                        <p class="price">35.000 FCFA</p>
+                          <del>5.000 FCFA</del>
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/chateauFerrande.jpg" alt="womens party wear shoes" class="showcase-img"
+                      width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="./images/mongarde.jpeg">
+                        <h4 class="showcase-title">Bordeaux Mongardé</h4>
+                      </a>
+            
+                      <a href="montgarde.html" class="showcase-category">Vin rouge</a>
+            
+                      <div class="price-box">
+                        <p class="price">4.000 FCFA</p>
+                          <del>4.500 FCFA</del>
+                          
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/baronlestac.jpeg" alt="sports claw women's shoes" class="showcase-img"
+                      width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="baronlestac.html">
+                        <h4 class="showcase-title">Baron de Lestac</h4>
+                      </a>
+            
+                      <a href="baronlestac.html" class="showcase-category">Vin rouge</a>
+            
+                      <div class="price-box">
+                        <p class="price">5.500 FCFA</p>
+                          <del>7.000 FCFA</del>
+                          
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/cotesrhone.jpeg" alt="air tekking shoes - white" class="showcase-img"
+                      width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="coterhone.html">
+                        <h4 class="showcase-title">Côtes du Rhône</h4>
+                      </a>
+            
+                      <a href="coterhone.html" class="showcase-category">Vin rouge</a>
+            
+                      <div class="price-box">
+                        <p class="price">7.000 FCFA</p>
+                          <del>7.500 FCFA</del>
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/mateus.jpg" alt="Boot With Suede Detail" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mateus</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category"> Vin rosé</a>
+            
+                      <div class="price-box">
+                        <p class="price">25.000 FCFA</p>
+                          <del>30.000 FCFA</del>
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="bordeau.html" class="showcase-img-box">
+                      <img src="./images/bordeaux4.jpeg" alt="men's leather formal wear shoes" class="showcase-img"
+                      width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="bordeau.html">
+                        <h4 class="showcase-title">Bordeaux Supérieur </h4>
+                      </a>
+            
+                      <a href="bordeaux.php" target="_blink"class="showcase-category">Vin rouge [2015]</a>
+            
+                      <div class="price-box">
+                        <p class="price">4.300 FCFA</p>
+                          <del>5.000 FCFA</del>
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/cartonmoutoncadet.jpeg" alt="Mouton cadet" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="moutoncadet.html">
+                        <h4 class="showcase-title">Mouton Cadet</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Casual</a>
+            
+                      <div class="price-box">
+                        <p class="price">5.000 FCFA</p>
+                          <del>8.000 FCFA</del>
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Tendances</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/clicquot.jpeg" alt="pocket watch leather pouch" class="showcase-img"
+                      width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="veuveclicquot.html">
+                        <h4 class="showcase-title">Veuve Clicquot</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Champganes</a>
+            
+                      <div class="price-box">
+                        <p class="price">46.000 FCFA</p>
+                          <del>50.000 FCFA</del>
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/petitberet.jpeg" alt="silver deer heart necklace" class="showcase-img"
+                      width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="veuveclicquot.html">
+                        <h4 class="showcase-title">Petit beret</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Champagne</a>
+            
+                      <div class="price-box">
+                        <p class="price">12.000 FCFA</p>
+                          <del>14.000 FCFA</del>
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/gh-mumm.jpeg" alt="titan 100 ml womens perfume" class="showcase-img"
+                      width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">GH. Mumm</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Champganes</a>
+            
+                      <div class="price-box">
+                        <p class="price">38.000 FCFA</p>
+                          <del>40.000 FCFA</del>
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/donperignon.jpeg" alt="men's leather reversible belt" class="showcase-img"
+                      width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Dom Pérignon</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Champagne</a>
+            
+                      <div class="price-box">
+                        <p class="price">225.000 FCFA</p>
+                          <del>230.000 FCFA</del>
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/grandsiecle.jpeg" alt="platinum zircon classic ring" class="showcase-img"
+                      width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Grand Siècle</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Champagne</a>
+            
+                      <div class="price-box">
+                        <p class="price">140.000 FCFA</p>
+                          <del>150.000 FCFA</del>
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/freifenet.jpeg" alt="smart watche vital plus" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Freifenet</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Champagne</a>
+            
+                      <div class="price-box">
+                        <p class="price">50.000 FCFA</p>
+                          <del>55.000  FCFA</del>
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/nicolasfeuillatte.jpeg" alt="shampoo conditioner packs" class="showcase-img"
+                      width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Nicolas Feuillatte</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Champgane</a>
+            
+                      <div class="price-box">
+                        <p class="price">8.000 FCFA</p>
+                          <del>10.000 FCFA</del>
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./images/corbiere.jpeg" alt="rose gold peacock earrings" class="showcase-img"
+                      width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Corbières</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Vin rouge</a>
+            
+                      <div class="price-box">
+                        <p class="price">3.500 FCFA</p>
+                          <del>4.000 FCFA</del>
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title">Offre du jour</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="./images/clicquot.jpeg" alt="Champgane veuve clicquot" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="veuveclicquot.html">
+                      <h3 class="showcase-title">CHAMPAGNES,VEUVE CLIQUOT BRUT</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Veuve Clicquot Ponsardin est une maison de Champagne fondée en 1772, et dont le siège est à Reims. 
+                      </p>
+
+                      <div class="price-box">
+                        <p class="price">46.000 FCFA</p>
+                            <del>50.000 FCFA</del>
+                        </div>
+
+                    <button class="add-cart-btn">VOIR PLUS</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          DÉJÀ VENDU <b>20</b>
+                        </p>
+
+                        <p>
+                          disponible: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Dépêchez-vous! L’offre se termine dans :  
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">360</p>
+
+                          <p class="display-text">Jours</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Heures</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="./images/moet.jpeg" alt="Moet et chandon" class="showcase-img">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+              
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">CHAMPAGNE, MOËT & CHANDON</a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                      Champagne Moet Et Chandon est une entreprise de renom dans 
+                      le monde du vin, offrant des cuvées prestigieuses de champagne de qualité supérieure.
+                      </p>
+              
+                      <div class="price-box">
+                        <p class="price">42.500 FCFA</p>
+                            <del>45.000 FCFA</del>
+                        </div>
+              
+                    <button class="add-cart-btn">VOIR PLUS</button>
+              
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> DEJA VENDU: <b>15</b> </p>
+              
+                        <p> DISPONIBLE: <b>40</b> </p>
+                      </div>
+              
+                      <div class="showcase-status-bar"></div>
+                    </div>
+              
+                    <div class="countdown-box">
+              
+                      <p class="countdown-desc">DEPÊCHEZ-VOUS! L'OFFRE SE TERMINE DANS:</p>
+              
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+                          <p class="display-text">Jour</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Heures</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">Nouveaux Produits</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./images/fauvert1.jpeg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="./images/fauvert.jpeg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="fauvert.html" class="showcase-category">Chevalier de Fauvert</a>
+
+                  <a href="fauvert.html">
+                    <h3 class="showcase-title">Le Chevalier de Fauvert est apprécié pour son engagement envers les meilleures
+                       pratiques viticoles et l’utilisation de technologies modernes pour produire des vins authentiques1.
+                       Si vous cherchez un vin à déguster ou à offrir, les vins de ce domaine sont une excellente option.</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">3.700 FCFA</p>
+                          <del>4.000 FCFA</del>
+                    </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./images/petitberet.jpeg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default"
+                    width="300">
+                  <img src="./images/petitberet2.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover"
+                    width="150">
+              
+                  <p class="showcase-badge angle black">Diponible</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="beret.html" class="showcase-category">Le Petit Béret</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Le Petit Béret a créé une gamme de vins blancs, rouges, rosé et effervescent issus
+                      de l’agriculture biologique et sans fermentation. Retrouvez toute l’intensité des notes viniques sans l’ivresse.</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">12.000 FCFA</p>
+                    <del>14.000 FCFA</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./images/freifenet.jpeg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                    width="300">
+                  <img src="./images/freifenet1.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Freifenet</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Freifenet est un vin d'origine espagnol. pure produit de cava
+                      et d'autres vins, située à Sant Sadurní d'Anoia, en Espagne.  Reconnaissable à sa 
+                      bouteille noire, ce brut est le produit de l'entreprise le plus vendu à l'exportation.</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">85.000 FCFA</p>
+                    <del>90.000 FCFA</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./images/montesa.jpeg" alt="Black Floral Wrap Midi Skirt" class="product-img default"
+                    width="300">
+                  <img src="./images/montesa2.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle pink">Nouveau</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="montesa.html" class="showcase-category">Vin rouge Montesa</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">La Montesa fermente en cuves d'acier inoxydable pendant trois semaines.</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">20.000 FCFA</p>
+                    <del>25.000 FCFA</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./images/vacombe1.jpg" alt="Casual Men's Brown shoes" class="product-img default"
+                    width="300">
+                    <img src="./images/folle-douce-blanc-moelleux.jpeg" alt=" vin montesa" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">VALCOMBE</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Le Rhône a roulé ses galets jusqu’à cet ultime plateau des Costières de Nîmes, face à 
+                      la Méditerranée. Ici, à Valcombe, les brises marines tempèrent 
+                      avec bonheur l’ardeur du soleil du midi, pour nous offrir des vins qui 
+                      sont le reflet exact et naturel de ce terroir</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">25.000 FCFA</p>
+                    <del>35.000 FCFA</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./images/clicquot.jpeg" alt="Pocket Watch Leather Pouch" class="product-img default"
+                    width="300">
+                  <img src="./images/veuvecliquot.jpeg" alt="Pocket Watch Leather Pouch" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">Vente</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="veuveclicquot.html" class="showcase-category">Veuve cliquot - Demi sec</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Avec Veuve Clicquot RICH, le fruit est stimulé à un niveau inédit. Le Pinot Noir 
+                      signature de Veuve Clicquot, avec un dosage supérieur, est doté d'une nouvelle 
+                      polyvalence tandis qu'une plus grande présence de Meunier privilégie
+                       les notes fraîches, fruitées et gourmandes.</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">90.000 FCFA</p>
+                    <del>100.000 FCFA</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./images/demoiselle22.png" alt="Smart watche Vital Plus" class="product-img default"
+                    width="300">
+                  <img src="./images/champagnedemoiselle.jpg" alt="Smart watche Vital Plus" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="" class="showcase-category">Demoisselle</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Ce champagne affiche son raffinement dans la flûte et dans la forme de sa bouteille
+                      inspirée de l’Art Nouveau. Un champagne assurément romantique…</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">78.000 FCFA</p>
+                    <del>60.000 FCFA</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./images/saintemilion.jpeg" alt="Womens Party Wear Shoes" class="product-img default"
+                    width="300">
+                  <img src="./images/emilion2.png" alt="Womens Party Wear Shoes" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">Vente</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="saintmichel.html" class="showcase-category">Saint Emilion</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">L'aire d'appellation, située à l'est de la ville Saint-Emilion, est constituée 
+                      d'un plateau calcaire dominant la Dordogne au sud et limité par le ruisseau de la Barbanne au nord.</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">4.700 FCFA</p>
+                          <del>5.000 FCFA</del>
+                    </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./images/fexf.jpg" alt="Mens Winter Leathers Jackets" class="product-img default"
+                    width="300">
+                  <img src="./images/freifenet.jpeg" alt="Mens Winter Leathers Jackets" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Freifenet</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Le leader mondial du cava Freixenet revendique un record
+                      historique en franchissant en 2021 la barre des 100 millions de bouteilles vendues dans le monde.</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">45.000 FCFA</p>
+                    <del>32.000 FCFA</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./images/cotesrhone.jpeg" alt="Trekking & Running Shoes - black" class="product-img default"
+                    width="300">
+                  <img src="./images/cote.jpg" alt="Trekking & Running Shoes - black" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">Vente</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Cotes Rhone</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Dans l’antiquité, la côte du Rhône fait partie des premières régions viticoles françaises.
+                      En clair, ce sont avant tout des vignerons en provenance de Marseille qui sont plantés dans cette zone.</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">8.000 FCFA</p>
+                          <del>10.000 FCFA</del>
+                    </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./images/croixMandelotte.jpg" alt="Men's Leather Formal Wear shoes" class="product-img default"
+                    width="300">
+                  <img src="./images/croix2.jpg" alt="Men's Leather Formal Wear shoes" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Croix Mandelotte</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Belle robe sombre, reflets violacés. Nez évoquant un coulis de fruits rouges, notamment de cerise.
+                      La bouche est sur le même profil très aromatique avec une grande souplesse et des tanins parfaitement intégrés. Un bordeaux festif.</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">50.000 FCFA</p>
+                    <del>65.000 FCFA</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./images/autreau.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img default" width="300">
+                  <img src="./images/autreau2.jpg" alt="Better Basics French Terry Sweatshorts"
+                    class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">Vente</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="auterau.html" class="showcase-category">Autréau</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Un vin unique au monde Voir tout. Le vignoble champenois ... Champagne Autréau de Champillon. </a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">28.000 FCFA</p>
+                    <del>35.000 FCFA</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">testimonial</h2>
+
+            <div class="testimonial-card">
+
+              <img src="./images/benoit.jpeg" alt="alan doe" class="testimonial-banner" width="80" height="80">
+
+              <p class="testimonial-name">N'GUESSAN BENOIT</p>
+
+              <p class="testimonial-title">CO Fondateur PARADIS BULL</p>
+
+              <img src="./images/logoparadisbull.jpeg" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                Le vin, symbole de convivialité et de raffinement, est bien plus qu'une simple boisson.
+                 C'est un art millénaire, une alchimie subtile entre la terre, le climat, le savoir-faire
+                  du vigneron et le temps. Chaque gorgée raconte une histoire, celle du terroir d'où il provient, des mains qui l'ont cultivé et des moments partagés autour de lui.
+                </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="./images/imagesvin-provence-2.jpg" alt="summer collection" class="cta-banner">
+
+            <a href="#" class="cta-content">
+
+              <p class="discount">25% Rabais</p>
+      
+                    <h2 class="cta-title">Collection d’été</h2>
+      
+                    <p class="cta-text">À partir de @ 12.000 FCFA</p>
+      
+                    <button class="cta-btn">COMMANDER MAINTENANT</button>
+
+            </a>
+
+          </div>
+
+
+
+          <!--
+            - SERVICE
+          -->
+
+          <div class="service">
+
+            <h2 class="title">Nos Services</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+      
+                        <h3 class="service-title">Vente</h3>
+                        <p class="service-desc">Nous vous proposons de meilleurs produits de qualités VINS/ SPIRITUEUX aux meilleurs prix.</p>
+      
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+                    
+                  <h3 class="service-title">Livraison</h3>
+                  <p class="service-desc">Livraison possible dans la ville d'Abidjan</p>
+              
+                </div>
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+                    
+                  <h3 class="service-title">Importations</h3>
+                  <p class="service-desc">Nos vins proviennent de leur terre d'origine</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+                    
+                  <h3 class="service-title">Exportations</h3>
+                  <p class="service-desc">Nous commercialisons partout</p>
+              
+                </div>
+              
+              </a>
+
+              
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./images/richeveuvecliquot.jpeg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+      
+              <a href="#" class="blog-category">Champagne</a>
+
+              <a href="#">
+                <h3 class="blog-title">Veuve Cliquot Rich</h3>
+              </a>
+
+              <p class="blog-meta">
+              Elaboré avec 45 % de pinot noir
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./images/freifenet.jpeg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+                
+              <a href="#" class="blog-category">Champagne</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Freifenet</a>
+              </h3>
+          
+              <p class="blog-meta">
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./images/petitberet.jpeg" alt="EBT vendors: Claim Your Share of SNAP Online Revenue."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+                
+              <a href="#" class="blog-category">Champgane</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Petit Beret</a>
+
+              </h3>
+          
+              <p class="blog-meta">
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./images/laurentperrieur.jpeg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+                
+              <a href="#" class="blog-category">Champagne</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Laurent Perrieux</a>
+              </h3>
+          
+              <p class="blog-meta">
+
+              </p>
+          
+            </div>
+          
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">ANNUAIRE DES MARQUES DES VINS & CHAMPAGNES</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">ESPAGNOL :</h3>
+
+          <a href="https://www.bing.com/images/search?view=detailV2&ccid=v%2baKiZJn&id=66C648066A084443264FAD09F0CF57B62A49CB66&thid=OIP.v-aKiZJnVqDolW3xd4quMAHaFL&mediaurl=https%3a%2f%2fwww.terredevins.com%2fwp-content%2fuploads%2f2017%2f05%2fles-4-vins_2013.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.bfe68a89926756a0e8956df1778aae30%3frik%3dZstJKrZXz%252fAJrQ%26pid%3dImgRaw%26r%3d0&exph=1050&expw=1500&q=4+Vins&simid=608053815134674967&FORM=IRPRST&ck=9ADB7B4D1A5A4ECF9A8FF1B5051257C4&selectedIndex=0&itb=0&ajaxhist=0&ajaxserp=0" class="footer-category-link">Château Calon Ségur</a>
+      <a href="#" class="footer-category-link">Le maquis de Calon Ségur</a>
+      <a href="#" class="footer-category-link">Saint-Estèphe</a>
+      <a href="#" class="footer-category-link">Château Capbern</a>
+      <a href="#" class="footer-category-link">Cabernet Sauvignon</a>
+      <a href="#" class="footer-category-link">innerwear</a>
+      <a href="#" class="footer-category-link">hosiery</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">ITALIENS :</h3>
+        
+          <a href="#" class="footer-category-link">Ligurie</a>
+      <a href="#" class="footer-category-link">Lombardie</a>
+      <a href="#" class="footer-category-link">Ombrie</a>
+      <a href="#" class="footer-category-link"> Marches</a>
+      <a href="#" class="footer-category-link">Latium</a>
+      <a href="#" class="footer-category-link"> Abruzzes</a>
+      <a href="#" class="footer-category-link">Molise</a>
+      <a href="#" class="footer-category-link"> Campanie</a>
+      <a href="#" class="footer-category-link">Basilicate</a>
+      <a href="#" class="footer-category-link">Sardaigne</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">FRANCAIS :</h3>
+        
+          <a href="#" class="footer-category-link">Laurent Perrieux</a>
+      <a href="#" class="footer-category-link">Mouton cadet</a>
+      <a href="#" class="footer-category-link">Beaujolais</a>
+      <a href="#" class="footer-category-link">Alsace</a>
+      <a href="#" class="footer-category-link">Bourgogone</a>
+      <a href="#" class="footer-category-link">Vallée du Rhône</a>
+      <a href="#" class="footer-category-link">Deutz</a>
+      <a href="#" class="footer-category-link">Gosset</a>
+      <a href="#" class="footer-category-link">Veuve cliquot</a>
+      <a href="#" class="footer-category-link">Dom perignon</a>
+      <a href="#" class="footer-category-link">Brimoncourt</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h2 class="nav-title">CATEGORIES POPULAIRES</h2>
+        
+          <a href="#" class="footer-category-link">Veuve Cliquot</a>
+          <a href="#" class="footer-category-link">Dom pérignon</a>
+          <a href="#" class="footer-category-link">Mouton cadet</a>
+          <a href="#" class="footer-category-link">Petit Berett</a>
+          <a href="#" class="footer-category-link">Moët & Chandon</a>
+          
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">PRODUITS</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Baisse des prix</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Nouveaux Produits</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Meilleures ventes</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Vous contactez</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Plan du site</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">NOTRE COMPAGNIE</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Livraisons</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Mentions légales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Termes et conditions</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Qui sommes-nous</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Paiement sécurisé</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">SERVICES</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Vente</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Conseils</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Livraison</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Importations</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Exportations</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Autres services</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Conseils</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Choix</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Goût</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Expérience</a>
+          </li>
+        
+    
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">CONTACTS</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              Marcory,Abidjan, Côte d'Ivoire
+
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:(+225) 0709943050" class="footer-nav-link">(+225) 0709943050 </a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:ParadisBull@gmail.com" class="footer-nav-link">ParadisBull@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./images/paiement.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">Tous droits réservés à PARADISBULL.</a> 
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

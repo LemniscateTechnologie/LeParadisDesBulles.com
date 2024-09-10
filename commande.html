@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logoparadisbull.jpeg" type="image/x-icon">
+
+    <title>Formulaire de Commande</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .logo {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+         img {
+            max-width: 150px;
+            height: auto;
+        }
+        .order-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 100%;
+        }
+        .order-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #b12704;
+        }
+        .order-form .form-group {
+            margin-bottom: 15px;
+        }
+        .order-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        .order-form input, .order-form textarea, .order-form select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .order-form textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .order-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #b12704;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .order-form button:hover {
+            background-color: #a61c03;
+        }
+    </style>
+</head>
+<body>
+
+<div class="order-form">
+        <img src="./images/logoparadisbull.jpeg" alt="Logo de votre ParadisBull">
+    <h2>Passer une Commande</h2>
+    <form action="votre-script.php" method="post">
+        <div class="form-group">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Téléphone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Adresse de livraison:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="product">Produit(s) commandé(s):</label>
+            <textarea id="product" name="product" placeholder="Indiquez le nom du vin, la quantité, etc." required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="payment-method">Méthode de paiement:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="">Sélectionnez une méthode de paiement</option>
+                <option value="carte-bancaire">Carte bancaire</option>
+                <option value="paypal">PayPal</option>
+                <option value="virement">Virement bancaire</option>
+            </select>
+        </div>
+        <button type="submit">Valider la Commande</button>
+    </form>
+</div>
+
+</body>
+</html>
